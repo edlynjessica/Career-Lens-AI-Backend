@@ -6,3 +6,4 @@ google-genai==1.30.0
 python-dotenv==1.0.1 
 pydantic==2.10.5 
 python-docx==1.1.2
+flashtext==2.7
