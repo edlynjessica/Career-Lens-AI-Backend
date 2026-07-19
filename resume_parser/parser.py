@@ -34,7 +34,8 @@ ROLES = {
     "java developer",
     "data analyst",
     "machine learning engineer",
-    "ai engineer"
+    "ai engineer",
+    "genai",
 }
 
 for skill in SKILLS:
@@ -91,12 +92,5 @@ def parse_resume(text):
     name = lines[0] if lines else ""
 
     return {
-        "name": name,
-        "email": extract_email(text),
-        "phone": extract_phone(text),
-        "cgpa": extract_cgpa(text),
-        "skills": extract_skills(text),
-        "frameworks": extract_frameworks(text),
-        "tools": extract_tools(text),
         "roles": extract_roles(text)
     }
